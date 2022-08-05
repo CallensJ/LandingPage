@@ -51,6 +51,14 @@ body {
   text-transform: uppercase;
 }
 
+.navigation__item a:hover,
+.navigation__item a:active
+ {
+    color: rgb(178, 176, 176);
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    transition: all .5s;
+}
 
 
 .heading {
@@ -78,7 +86,7 @@ body {
     }
 
     .navigation {
-        border: 5px solid black;
+        
         flex-direction: column;
         align-items: center;
         
@@ -90,7 +98,7 @@ body {
     .navigation__items{
         flex-direction: column;
         align-items: center;
-        border: 2px solid red;
+       
     }
     .navigation__item{
         margin-top: 1rem;
@@ -99,4 +107,14 @@ body {
     .heading{
         text-align: center;
     }
+    .heading-1 {
+        font-size: 5rem;
+    }
+
+.navigation__item a:hover,
+.navigation__item a:active
+ {
+    color: rgb(178, 176, 176);
+    
+}
   }
