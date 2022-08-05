@@ -1,45 +1,101 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%; /* 1rem = 10px */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /* 10px/16px = 62.5% -> 1rem = 10px; */
+    color: #fff;
+
 }
+
 body {
-  background-image: url("./images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-image:linear-gradient(90deg, rgba(35, 34, 34, 0.561) 0%, rgba(35, 34, 34, 0.542) 99%), url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
 }
-
+@media only screen and (max-width: 480px) {
 .navigation {
-  width: 100rem;
-  display: flex;
-  justify-content: space-evenly;
+    flex-direction: column;  
+}
 }
 
-.navigation a {
-  font-size: 3rem;
-  text-decoration: none;
-  color: #fff;
+.navigation__items{
+    display: flex;
+    width: 40rem;
+    justify-content: space-evenly;   
+}
+@media only screen and (max-width: 480px) {
+    .navigation__items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        
+    }
+    }
+.navigation__item{
+    list-style-type: none;    
+}
+
+.navigation__item a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-transform: uppercase; 
 }
 
 
-.heading__text{
+.navigation__item a:hover,
+.navigation__item a:active
+ {
+    color: rgb(183, 183, 183);
+    transition: all .5s;
+    border-bottom: 1px solid greenyellow;
+    padding-bottom: .7rem;
+}
+@media only screen and (max-width: 480px) {
+    .navigation__item a:hover,
+    .navigation__item a:active
+ {
+    color: rgb(183, 183, 183);
+    transition: all .5s;
+    border-bottom: 1px solid greenyellow;
+    padding-bottom: .7rem;
+}
+    }
+
+.heading{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+@media only screen and (max-width: 480px) {
+    .heading {
+        text-align: center;
+    }
+    }
+
 .heading-1{
-    font-size: 5rem;
+    font-size: 7rem;
+    font-weight: 100;
+}
+.subheading{
+    font-size: 2rem;
+    font-style: italic;
 }
