@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.navigation {
+  width: 100rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigation a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.heading__text{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-1{
+    font-size: 5rem;
+}
